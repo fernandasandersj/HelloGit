@@ -8,7 +8,7 @@ break para salir del bucle
 continue para saltar una iteracion (sentencia)
 */ 
 
-
+console.log('bucle for')
 
 for( let i=0, j=10 ; i < 5 && j > 5  ; i++, j--){
     console.log(i,j);
@@ -20,6 +20,7 @@ Entiendo que el de dentro siempre se completara mientras que la condicion primer
 
 La opción ideal de usar el for es cuando sabes las veces exactas que quieres iterar o como es el progreso exacto*/
 
+console.log('bucle encadenado')
 
 for ( x=1 ; x<=10 ; x++){
 
@@ -29,3 +30,32 @@ for ( x=1 ; x<=10 ; x++){
     }
 
 } 
+
+console.log('funcion')
+
+function saludar(nombre){
+    console.log('Hola' + nombre)
+}
+
+saludar('Jony');
+saludar('Fer');
+
+function sumar(a,b) {
+    const resultadoSuma= a+b
+    console.log (resultadoSuma); 
+}
+
+
+function restar(a, b){
+    const resultadoResta =a - b
+    console.log(resultadoResta);
+}
+
+function multiplicacion(a, b){
+    return a*b
+}
+
+sumar(2,6)
+restar(4,8)
+
+console.log(multiplicacion(3,4));
