@@ -59,3 +59,11 @@ sumar(2,6)
 restar(4,8)
 
 console.log(multiplicacion(3,4));
+
+const nombreFuncionFlecha = () => {
+    //que debe hacer la funcion.    
+}
+
+const sumarFelcha = (a,b) => a+b
+
+console.log (sumarFelcha(4,5) + ' -> funcion flecha')
