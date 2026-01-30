@@ -37,8 +37,10 @@ function saludar(nombre){
     console.log('Hola' + nombre)
 }
 
-saludar('Jony');
-saludar('Fer');
+saludar(' Jony');
+saludar(' Fer');
+
+console.log('suma')
 
 function sumar(a,b) {
     const resultadoSuma= a+b
@@ -67,3 +69,45 @@ const nombreFuncionFlecha = () => {
 const sumarFelcha = (a,b) => a+b
 
 console.log (sumarFelcha(4,5) + ' -> funcion flecha')
+
+
+
+//Concatenaciones
+
+
+let grettings= 'Hello';
+let nombre1 = ', Juan';
+let nombre2 = ', Fernanda';
+
+console.log(grettings + nombre1);
+console.log(grettings + nombre2);
+
+function saludo(grettings, nombre1, nombre2){
+console.log(grettings +', ' + nombre1);
+console.log(grettings + ', ' + nombre2);
+}
+
+saludo('Gracias', 'Juan', 'Fernanda');
+
+//metodo concat() para unir dos cadenas de texto
+
+let str1= 'Hello';
+let str2= 'World'; 
+let str3= '!!!!!'; 
+let result = str1.concat(' ' ,str2);
+
+console.log(result);
+
+function saludoMetodo(str1,str2,str3){
+    //return para que lo que me devuelve se pueda guardar una variable FUERA de la funcion. 
+    return str1.concat(' ',str2, str3);
+}
+
+console.log(saludoMetodo(str1,str2,str3));
+
+//para concatenar aun mejor utilizar $ en vez del método OJO con la comilla al revés 
+ result = str1.concat(' ' ,str2);
+let resultDolar = `${str1}${str2}${str3}`;
+
+console.log(resultDolar);
+
