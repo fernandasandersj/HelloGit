@@ -111,3 +111,37 @@ let resultDolar = `${str1}${str2}${str3}`;
 
 console.log(resultDolar);
 
+// Ejempelo de como saber que tipo de dato tiene una variable
+
+let cambioTipoVariable = "Tipo de variable String";
+
+console.log(typeof cambioTipoVariable);
+
+cambioTipoVariable = 24 ;
+
+console.log(typeof cambioTipoVariable );
+
+// En caso de que se proporcione una variale de tipo "null" nos devolverá un dato tipo objeto. Se considera un bug, de que está hecho mal JS desde el inicio que nunca se cambio. 
+
+cambioTipoVariable = null;
+
+console.log(typeof cambioTipoVariable );
+
+// recordar que un valor indefinido, es una variable que se ha declarado, pero que aún no almacenada nada. Por eso " no está definido " . Null por otro lado es que no tiene ningún valor. No que no contenga nada, si no que lo que contiene no tiene valor. 
+
+// ejemplo de un objeto S
+
+let pet = {
+  name: "Fluffy",
+  age: 3,
+  type: "dog"
+};
+
+// Se puede utilizar Symbol puede utilizarse como identificador de las propiedades de los objetos.
+
+const crypticKey1= Symbol("saltNpepper");
+const crypticKey2= Symbol("saltNpepper");
+console.log(crypticKey1 === crypticKey2); // false
+
+//BigInt Para valores numericos muy largos
+
