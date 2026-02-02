@@ -244,3 +244,11 @@ let mensajePrompt = metodoPromt(edadPrompt, nombrePrompt);
 
 console.log(mensajePrompt);
 
+
+// ASCII -> metodos para saber el numero del caracter charCodeAt() y para saber el caracter de un valor fromCharCode()
+
+let symbol = "!";
+console.log(symbol.charCodeAt(0));
+
+let char = String.fromCharCode(65);
+console.log(char); 
